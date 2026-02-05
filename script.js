@@ -123,7 +123,7 @@ if (contactForm) {
         try {
             // TODO: Replace 'YOUR_FORM_ID' with your actual Formspree form ID
             // Get your form ID from: https://formspree.io/
-            const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+            const response = await fetch('https://formspree.io/f/xqedzlzo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
