@@ -1,0 +1,412 @@
+📋 CUSTOMIZATION CHECKLIST
+========================
+
+Use this checklist to personalize your portfolio for YOUR law practice.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ✅ BASIC INFORMATION (Priority: HIGH)
+
+### Attorney Name
+File: index.html
+[ ] Find all instances of "Jonathan Hayes"
+[ ] Replace with your name
+[ ] Update page title (line 5)
+[ ] Update footer copyright
+
+### Contact Information  
+File: index.html
+[ ] Replace phone number: (123) 456-7890
+    - Hero section (line ~60)
+    - Contact section (line ~380)
+    - Footer (line ~440)
+    
+[ ] Replace email: contact@jonathanhayes.law
+    - Contact section
+    - Footer
+    
+[ ] Replace office address:
+    - "123 Justice Boulevard, Suite 500"
+    - "Downtown, ST 12345"
+    
+[ ] Update office hours if different
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📸 IMAGES (Priority: HIGH)
+
+### Add Your Photos
+Directory: lawyerportforlio folder
+
+[ ] Get professional headshot (500x600px recommended)
+    - Save as: lawyer-photo.jpg
+    - Update src in HTML (line ~65)
+    
+[ ] Get courtroom or office photo (550x550px)
+    - Save as: courtroom-photo.jpg  
+    - Update src in HTML (line ~90)
+    
+[ ] Optional: Add favicon
+    - Create 32x32px icon
+    - Add to <head>: <link rel="icon" href="favicon.ico">
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📊 STATISTICS (Priority: MEDIUM)
+
+File: index.html (around line 50)
+
+Current Stats:
+[ ] 500+ Cases Handled
+[ ] 92% Success Rate
+[ ] 15 Years Experience
+
+Update to YOUR numbers:
+[ ] Change data-target="500" to your number
+[ ] Change data-target="92" to your success rate
+[ ] Change data-target="15" to your years
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎓 CREDENTIALS (Priority: HIGH)
+
+File: index.html (About section, around line 105)
+
+[ ] Update education:
+    - Replace "Harvard Law School"
+    - Replace "Yale University"
+    
+[ ] Update bar admissions:
+    - Replace "State Bar Association"
+    - Add your specific states
+    
+[ ] Update awards:
+    - Replace "Super Lawyers"
+    - Add your actual recognitions
+    
+[ ] Update professional memberships:
+    - Replace "NACDL Member"
+    - Add your associations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ⚖️ PRACTICE AREAS (Priority: MEDIUM)
+
+File: index.html (Practice Areas section, around line 130)
+
+Current practice areas (6):
+[ ] DUI/DWI Defense
+[ ] White Collar Crimes
+[ ] Assault & Battery
+[ ] Drug Offenses
+[ ] Theft & Property
+[ ] Federal Crimes
+
+Customize:
+[ ] Keep areas you practice
+[ ] Remove areas you don't practice
+[ ] Add specialized areas
+[ ] Update descriptions and bullet points
+
+Icon Options (Font Awesome):
+- fa-car (DUI)
+- fa-briefcase (Business)
+- fa-hand-fist (Assault)
+- fa-pills (Drug)
+- fa-mask (Theft)
+- fa-gavel (General law)
+- fa-user-shield (Defense)
+- fa-home (Domestic)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🏆 CASE RESULTS (Priority: HIGH - Legal Compliance!)
+
+File: index.html (Results section, around line 210)
+
+⚠️ IMPORTANT: Follow your state bar advertising rules!
+
+Current: 4 sample cases
+[ ] Replace with YOUR actual cases
+[ ] Ensure compliance with bar rules
+[ ] Anonymize client information
+[ ] Use accurate outcomes only
+[ ] Add disclaimers if required
+
+For each case:
+[ ] Update case type
+[ ] Update description
+[ ] Update "before" outcome
+[ ] Update "after" outcome
+[ ] Change badge (Dismissed, Not Guilty, Reduced)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 💬 TESTIMONIALS (Priority: HIGH - Legal Compliance!)
+
+File: index.html (Testimonials section, around line 250)
+
+⚠️ IMPORTANT: Use only with client permission!
+
+Current: 3 sample testimonials
+[ ] Replace with REAL client reviews
+[ ] Get written permission from clients
+[ ] Consider anonymizing (initials only)
+[ ] Comply with bar advertising rules
+[ ] Include case type for context
+
+For each testimonial:
+[ ] Update quote text
+[ ] Update client initials
+[ ] Update case type outcome
+[ ] Verify authenticity
+
+[ ] Update rating summary (4.9 → your rating)
+[ ] Update review count (150+ → your count)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📚 LEGAL RESOURCES (Priority: LOW)
+
+File: index.html (Resources section, around line 300)
+
+Current: 4 resource cards
+[ ] Decide if you'll actually provide these resources
+[ ] Create content for each guide
+[ ] Link to actual pages/PDFs
+[ ] Or remove section if not using
+
+Optional: Add blog section for articles
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📧 CONTACT FORM INTEGRATION (Priority: HIGH)
+
+File: script.js (around line 150)
+
+Current: Shows success message only (not functional)
+
+Choose integration method:
+[ ] Option 1: FormSpree
+    - Sign up at formspree.io
+    - Get form endpoint
+    - Update form action
+    
+[ ] Option 2: EmailJS  
+    - Sign up at emailjs.com
+    - Add EmailJS script
+    - Update form handler
+    
+[ ] Option 3: Custom backend
+    - Create API endpoint
+    - Update fetch call
+    
+[ ] Test form submissions
+[ ] Set up email notifications
+[ ] Configure auto-response
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎨 BRANDING (Priority: MEDIUM)
+
+### Colors
+File: styles.css (lines 2-15)
+
+Keep default navy/gold or customize:
+[ ] --primary-blue: #1a2b4a
+[ ] --accent-gold: #d4af37
+[ ] Update throughout if changing
+
+### Logo
+File: index.html (line 25)
+[ ] Option 1: Keep scales icon + name
+[ ] Option 2: Replace with actual logo image
+[ ] Option 3: Just text logo
+
+### Fonts
+Currently using:
+- Playfair Display (headings) - Serif, traditional
+- Inter (body) - Sans-serif, modern
+
+[ ] Keep current fonts (recommended)
+[ ] Or change in styles.css and HTML <link>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🔗 SOCIAL MEDIA (Priority: LOW)
+
+File: index.html (Footer, around line 425)
+
+Current: Placeholder # links
+[ ] Add LinkedIn profile URL
+[ ] Add Twitter profile URL  
+[ ] Add Facebook page URL
+[ ] Remove unused social links
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📄 LEGAL PAGES (Priority: MEDIUM)
+
+File: index.html (Footer links)
+
+Create these pages:
+[ ] Privacy Policy (privacy.html)
+[ ] Terms of Service (terms.html)
+[ ] Legal Disclaimer (disclaimer.html)
+[ ] Update links in footer
+
+Use free generators:
+- privacypolicygenerator.info
+- termsfeed.com
+
+Or consult with attorney about compliance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🔍 SEO OPTIMIZATION (Priority: MEDIUM)
+
+File: index.html
+
+[ ] Update meta description (line 6)
+    - Include: location, practice areas, unique value
+    
+[ ] Update page title for SEO (line 5)
+    - Format: "Name | Criminal Defense Attorney | Location"
+    
+[ ] Add location keywords throughout
+    - "Criminal lawyer in [City]"
+    - "[City] DUI attorney"
+    
+[ ] Add alt text to images
+    - Already done for main images
+    - Update with your name
+    
+[ ] Create sitemap.xml
+[ ] Create robots.txt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📱 MOBILE TESTING (Priority: HIGH)
+
+Before launch:
+[ ] Test on iPhone (Safari)
+[ ] Test on Android (Chrome)
+[ ] Test on tablet
+[ ] Check all CTAs work
+[ ] Verify phone number is clickable
+[ ] Test form submission
+[ ] Check menu navigation
+[ ] Verify all sections display properly
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🚀 PRE-LAUNCH CHECKLIST (Priority: CRITICAL)
+
+Technical:
+[ ] All contact info updated
+[ ] Form is functional
+[ ] Images optimized (<200KB each)
+[ ] Mobile responsive verified
+[ ] Links all work (no broken links)
+[ ] Page loads in <3 seconds
+
+Legal Compliance:
+[ ] Bar association advertising rules reviewed
+[ ] Required disclaimers added
+[ ] Client testimonials have permission
+[ ] Case results are accurate and compliant
+[ ] Privacy policy in place
+[ ] No guarantees of outcomes
+
+Content:
+[ ] All placeholder text replaced
+[ ] Spell check completed
+[ ] Grammar check completed
+[ ] Facts verified (credentials, stats)
+[ ] Professional tone consistent
+
+Testing:
+[ ] Tested in Chrome
+[ ] Tested in Firefox
+[ ] Tested in Safari
+[ ] Tested on mobile device
+[ ] Contact form tested
+[ ] All CTAs tested
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🌐 DEPLOYMENT (Priority: HIGH)
+
+Choose hosting:
+[ ] Netlify (recommended - free, easy)
+[ ] GitHub Pages (free, requires git)
+[ ] Vercel (free, fast)
+[ ] Traditional hosting (paid, familiar)
+
+Domain:
+[ ] Purchase domain name
+    - Recommended: yourname.law or yourname.com
+[ ] Connect domain to hosting
+[ ] Enable HTTPS (usually automatic)
+
+After deployment:
+[ ] Google Search Console setup
+[ ] Google My Business listing
+[ ] Google Analytics setup
+[ ] Submit to legal directories
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📊 ANALYTICS & TRACKING (Priority: MEDIUM)
+
+[ ] Install Google Analytics
+    - Add tracking code to <head>
+    - Track: page views, form submissions, button clicks
+    
+[ ] Set up conversion tracking
+    - Track: consultation requests, phone clicks
+    
+[ ] Install heatmap tool (optional)
+    - Hotjar or Microsoft Clarity
+    - See where users click
+
+[ ] Set up A/B testing (optional)
+    - Test different CTAs
+    - Test different headlines
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 MARKETING INTEGRATION (Priority: LOW)
+
+Optional integrations:
+[ ] Live chat widget (Intercom, Drift)
+[ ] Booking system (Calendly)
+[ ] CRM integration (Clio, MyCase)
+[ ] Email marketing (Mailchimp)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📝 FINAL NOTES
+
+Estimated time to customize: 4-8 hours
+- 2 hours: Content updates
+- 2 hours: Images and branding  
+- 2 hours: Testing
+- 2 hours: Deployment and setup
+
+Need help?
+- Hire a developer for advanced customization
+- Use Fiverr or Upwork for quick edits
+- Contact web designer for professional photos
+
+Legal questions?
+- Consult your state bar association
+- Review advertising and ethics rules
+- Add required disclaimers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Good luck with your new portfolio! 🚀⚖️
+
+Remember: A website is never "done" - keep updating with new cases,
+testimonials, and content to stay relevant and competitive!
