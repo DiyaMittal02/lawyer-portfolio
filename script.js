@@ -103,7 +103,7 @@ animateOnScroll.forEach(el => {
 // ==================== CONTACT FORM HANDLING ====================
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         // Get form data
@@ -117,11 +117,38 @@ if (contactForm) {
             urgent: document.getElementById('urgent').checked
         };
 
-        // Show success message (in production, this would send data to server)
-        showNotification('Consultation request submitted successfully! We will contact you within 24 hours.', 'success');
+        // Show loading notification
+        showNotification('Sending your consultation request...', 'info');
 
-        // Reset form
-        contactForm.reset();
+        try {
+            // TODO: Replace 'YOUR_FORM_ID' with your actual Formspree form ID
+            // Get your form ID from: https://formspree.io/
+            const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: `${formData.firstName} ${formData.lastName}`,
+                    email: formData.email,
+                    phone: formData.phone,
+                    caseType: formData.caseType,
+                    message: formData.message,
+                    urgent: formData.urgent ? 'YES - URGENT' : 'No',
+                    _subject: `New Consultation Request from ${formData.firstName} ${formData.lastName}`,
+                })
+            });
+
+            if (response.ok) {
+                showNotification('✓ Consultation request sent successfully! We will contact you within 24 hours.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            showNotification('⚠ Failed to send request. Please email us directly or try again.', 'error');
+            console.error('Form submission error:', error);
+        }
     });
 }
 
@@ -129,9 +156,22 @@ if (contactForm) {
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
+
+    const colors = {
+        success: '#10b981',
+        error: '#ef4444',
+        info: '#3b82f6'
+    };
+
+    const icons = {
+        success: 'check-circle',
+        error: 'exclamation-circle',
+        info: 'info-circle'
+    };
+
     notification.innerHTML = `
         <div class="notification-content">
-            <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+            <i class="fas fa-${icons[type] || 'check-circle'}"></i>
             <span>${message}</span>
         </div>
     `;
@@ -141,7 +181,7 @@ function showNotification(message, type = 'success') {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: ${type === 'success' ? '#10b981' : '#ef4444'};
+        background: ${colors[type] || colors.success};
         color: white;
         padding: 20px 24px;
         border-radius: 12px;
