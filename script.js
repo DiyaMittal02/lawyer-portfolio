@@ -265,44 +265,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ==================== LAZY LOADING IMAGES ====================
-// Create placeholder images
-const createPlaceholderImage = (width, height, text) => {
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    const ctx = canvas.getContext('2d');
 
-    // Gradient background
-    const gradient = ctx.createLinearGradient(0, 0, width, height);
-    gradient.addColorStop(0, '#1a2b4a');
-    gradient.addColorStop(1, '#2d4a7c');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, width, height);
-
-    // Add text
-    ctx.fillStyle = '#d4af37';
-    ctx.font = 'bold 32px Arial';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(text, width / 2, height / 2);
-
-    return canvas.toDataURL();
-};
-
-// Set placeholder images
-const lawyerPhoto = document.getElementById('lawyerPhoto');
-const courtroomPhoto = document.getElementById('courtroomPhoto');
-
-if (lawyerPhoto) {
-    lawyerPhoto.src = createPlaceholderImage(500, 600, 'Attorney Photo');
-    lawyerPhoto.alt = 'Jonathan Hayes - Criminal Defense Attorney';
-}
-
-if (courtroomPhoto) {
-    courtroomPhoto.src = createPlaceholderImage(550, 550, 'Courtroom');
-    courtroomPhoto.alt = 'Professional Attorney in Court';
-}
 
 // ==================== TYPING EFFECT FOR HERO ====================
 function typeWriter(element, text, speed = 50) {
